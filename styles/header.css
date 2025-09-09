@@ -1,0 +1,153 @@
+.searchbar{
+    font-family: Roboto, Arial; 
+    height: 36px;
+    font-size: 16px;
+    padding-left: 10px;
+    display:flex; 
+    flex: 1; 
+    border: 1px solid gray;
+    border-radius: 2px; 
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+    width: 0; 
+}
+.searchbar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px; 
+}
+.header{
+    background-color: white;
+    height: 55px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(220, 220, 220);
+    border-bottom-style: solid;
+    z-index: 100;
+}
+.left-section{
+    width: 180px; 
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    flex: 1; 
+    margin-left:75px ;
+    margin-right: 30px;
+    max-width: 500px; 
+    display: flex; 
+    align-items: center;
+}
+.right-section{
+    width: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.icon{
+    height: 20px; 
+    margin-left: 23px; 
+}
+.search-but{
+    height:40px;
+    width: 58px; 
+    background-color:rgb(240, 240, 240) ;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-right: 8px; 
+    border-radius: 2px;
+    position: relative;
+    transition: opacity 0.15s;
+}
+.tooltip{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    background-color: rgb(96, 96, 96);
+    color: white; 
+    padding: 8px;
+    position: absolute; 
+    bottom: -50px; 
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.search-but:hover .tooltip{
+    opacity: .8;
+}
+.mic-but:hover .tooltip{
+    opacity: .8;
+}
+
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+
+}
+.mic-but{
+    border-radius: 20px;
+    height: 40px; 
+    width: 40px; 
+    border: none; 
+    position: relative; 
+   transition: opacity 0.15s;
+}
+.mic-icon{
+    height: 24px;
+    background-color: rgb(245, 245, 245);
+    margin-top: 4px;
+
+
+}
+
+.up-icon{
+    height: 24px;
+}
+.apps-icon{
+    height: 24px;
+}
+.noti-icon{
+    height: 24px;
+
+}
+.myCh-icon{
+    height: 30px;
+    border-radius: 15px;
+}
+.no-not{
+    position: absolute;
+    font-size: 11px; 
+    top: -3px; 
+    right: -3px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.notif-div{
+    position: relative;
+    transition: opacity 0.15s;
+}
+.up-div, .yt-apps-div{
+    position: relative; 
+    transition: opacity 0.15s;
+}
+.up-div:hover .tooltip, 
+.yt-apps-div:hover .tooltip,
+.notif-div:hover .tooltip{
+    opacity: .8;
+}
